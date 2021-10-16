@@ -1,10 +1,14 @@
+class MortarWords {
+    static  MORTAR_WORDS = ['a', 'the', 'and', 'to'];
+};
+
 class WordLists {
     static WORD_LISTS = [
         {
             'list': ['why', 'to question', 'question', 'questions', 'questioned', 'questioning', 'mystery', 'mysteries', 'unknown', 'mysterious', 'curious', 'inquisitively', 'mysteriously', 'to ask', 'ask', 'asks', 'asked', 'asking', 'to wonder', 'wonder', 'wonders', 'wondered', 'wondering']
         },
         {
-            'list': ['I', ' me', ' myself', ' my', ' mine', ' sight', ' sights', ' vision', ' visions', ' my', ' mine', ' perceptive', ' visibly', ' to see', ' see', 'sees', 'seen', 'seeing', 'saw', ' to envision', 'envision', 'envisions', 'envisioned', 'envisioning']
+            'list': ['I', 'me', ' myself', ' my', ' mine', ' sight', ' sights', ' vision', ' visions', ' my', ' mine', ' perceptive', ' visibly', ' to see', ' see', 'sees', 'seen', 'seeing', 'saw', ' to envision', 'envision', 'envisions', 'envisioned', 'envisioning']
         },
         {
             'list': ['fear', 'fears', 'afraid', 'fearfully', 'timidly', 'to fear', 'fear', 'feared', 'fearing']
@@ -30,6 +34,6 @@ class WordLists {
     ]
 };
 
-export {WordLists}
+export {WordLists, MortarWords}
 
 
