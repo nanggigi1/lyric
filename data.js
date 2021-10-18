@@ -15,7 +15,7 @@ class WordLists {
             'list': ['fear', 'fears', 'afraid', 'fearfully', 'timidly', 'fear', 'feared', 'fearing']
         },
         {
-            'list': ['life', 'growth', 'sprout', 'sprouts', 'alive', 'lively', 'new', 'vigorously', 'lives', 'lived', 'living', 'grow', 'grows', 'growing', 'grew', 'begin', 'begins', 'began', 'beginning']
+            'list': ['life', 'live', 'growth', 'sprout', 'sprouts', 'alive', 'lively', 'new', 'vigorously', 'lives', 'lived', 'living', 'grow', 'grows', 'growing', 'grew', 'begin', 'begins', 'began', 'beginning']
         },
         {
             'list': ['because', 'reason', 'reasons', 'root', 'roots', 'source', 'sources', 'rooted', 'first', 'initially', 'cause', 'causes', 'caused', 'causing', 'beget', 'begets', 'begot', 'begetting']
