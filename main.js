@@ -1,4 +1,4 @@
-import { Menus } from '/js/menus.js';
+import { Menus } from './js/menus.js';
 
 class Main {
   constructor() {

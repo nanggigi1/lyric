@@ -181,15 +181,15 @@ class Menus {
     const solved = state.getAttribute('data-solved');
     if (solved == 'true') {
       if (index >= 0 && index <= 5) {
-        cube.style.backgroundImage = `url(/images/solved-${index}.png)`;
+        cube.style.backgroundImage = `url(./images/solved-${index}.png)`;
       } else {
-        cube.style.backgroundImage = 'url(/images/solved-0.png)';
+        cube.style.backgroundImage = 'url(./images/solved-0.png)';
       }
     } else {
       if (index >= 6 && index <= 11) {
-        cube.style.backgroundImage = `url(/images/shuffled-${index - 6}.png)`;
+        cube.style.backgroundImage = `url(./images/shuffled-${index - 6}.png)`;
       } else {
-        cube.style.backgroundImage = 'url(/images/shuffled-0.png)';
+        cube.style.backgroundImage = 'url(./images/shuffled-0.png)';
       }
     }
   }
@@ -233,11 +233,12 @@ class Menus {
     const shuffled = document.querySelector('.cube-shuffled');
     const solved = document.querySelector('.cube-solved');
     if (state.getAttribute('data-solved') == 'false') {
-      shuffled.style.backgroundImage = 'url(/images/swap_calls_red_24dp.svg)';
-      solved.style.backgroundImage = 'url(/images/apps_black_24dp.svg)';
+      shuffled.style.backgroundImage = 'url(./images/swap_calls_red_24dp.svg)';
+      solved.style.backgroundImage = 'url(./images/apps_black_24dp.svg)';
     } else {
-      shuffled.style.backgroundImage = 'url(/images/swap_calls_black_24dp.svg)';
-      solved.style.backgroundImage = 'url(/images/apps_red_24dp.svg)';
+      shuffled.style.backgroundImage =
+        'url(./images/swap_calls_black_24dp.svg)';
+      solved.style.backgroundImage = 'url(./images/apps_red_24dp.svg)';
     }
   }
 
