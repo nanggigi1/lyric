@@ -2,21 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Lyric</title>
+    <title>lyric</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <link rel="icon" type="image/png" href="#" />
     <link href="main.css" rel="stylesheet" type="text/css" />
     <script type="module">
-      import { Main } from "./main.js";
-      document.addEventListener("DOMContentLoaded", () => {
+      import { Main } from './main.js';
+      document.addEventListener('DOMContentLoaded', () => {
         var main = new Main();
       });
     </script>
   </head>
   <body>
-    <main>
-      <form id="form-1"></form>
-      <article id="article-1"></article>
-    </main>           
+    <div class="state" data-solved="true" data-cube-face-index="0"></div>
+    <div class="menu-wrapper">
+      <ul class="top-level-menu">
+        <div class="caret-chevron left"></div>
+      </ul>
+    </div>
+    <!-- <div class="cube-up cube-nav"></div> -->
+    <div class="cube-wrapper">
+      <div class="cube-left"></div>
+      <div class="cube"></div>
+      <div class="cube-right"></div>
+    </div>
+    <div class="cube-options-wrapper">
+      <div class="cube-solved"></div>
+      <!-- <div class="cube-shuffled cube-nav"></div> -->
+      <div class="cube-shuffled"></div>
+    </div>
+    <p class="poem-string-wrapper"><span class="poem-string"></span></p>
+    <div id="app"></div>
   </body>
 </html>

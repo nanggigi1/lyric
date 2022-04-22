@@ -1,0 +1,294 @@
+.cube-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  width: 600px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-options-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 90px;
+  margin-top: 12px;
+}
+
+.cube {
+  width: 400px;
+  height: 400px;
+  border-radius: 16px;
+  /* background: tomato; */
+  position: relative;
+  background-image: url(/images/solved-0.png);
+  background-size: cover;
+}
+
+.cube-left,
+.cube-right {
+  justify-self: center;
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+
+.cube-solved,
+.cube-shuffled {
+  width: 40px;
+  height: 40px;
+}
+
+.cube-solved {
+  background-image: url(/images/apps_red_24dp.svg);
+  background-size: cover;
+}
+
+.cube-shuffled {
+  background-image: url(/images/swap_calls_black_24dp.svg);
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+.cube-solved:hover {
+  background-image: url(/images/apps_red_24dp.svg);
+}
+
+.cube-shuffled:hover {
+  background-image: url(/images/swap_calls_red_24dp.svg);
+  /* background-size: cover; */
+}
+
+.cube-left {
+  background-image: url(/images/chevron_left_black_24dp.svg);
+  background-size: cover;
+}
+
+.cube-right {
+  background-image: url(/images/chevron_right_black_24dp.svg);
+  background-size: cover;
+}
+
+.cube-left:hover {
+  background-image: url(/images/chevron_left_red_24dp.svg);
+}
+
+.cube-right:hover {
+  background-image: url(/images/chevron_right_red_24dp.svg);
+}
+
+.poem-string-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.poem-string {
+  font: bold 32px Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 0 0 10px;
+  background-color: tomato;
+  padding: 20px 20px 20px 20px;
+  display: block;
+  line-height: 30px;
+}
+
+.menu-wrapper {
+  position: relative;
+  width: fit-content;
+  height: 24px;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+.third-level-menu {
+  position: absolute;
+  top: 0;
+  right: -120px;
+  width: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.third-level-menu > li {
+  height: 30px;
+  /* background-color: #999999; */
+  background-color: tomato;
+}
+.third-level-menu > li:hover {
+  background-color: #cccccc;
+}
+
+.second-level-menu {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  /* width: 150px; */
+  width: fit-content;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.second-level-menu > li {
+  position: relative;
+  height: 30px;
+  /* background-color: #999999; */
+  background-color: tomato;
+}
+
+.second-level-menu > li:hover {
+  background-color: #cccccc;
+}
+
+.top-level-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top-level-menu > li {
+  position: relative;
+  float: left;
+  height: 30px;
+  width: fit-content;
+  background-color: #999999;
+  margin: 0 2px 0 2px;
+}
+
+.chevron-down {
+  background-image: url('/images/chevron-down.svg');
+  background-position: calc(100% - 6px) center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.chevron-right {
+  background-image: url('/images/chevron-right.svg');
+  background-position: calc(100% - 6px) center;
+  background-repeat: no-repeat;
+  background-size: 15px;
+}
+
+.top-level-menu > li:hover {
+  background-color: #cccccc;
+}
+
+.top-level-menu li:hover > ul {
+  /* On hover, display the next level's menu */
+  display: inline;
+}
+
+/* Menu Link Styles */
+
+/* Apply to all links inside the multi-level menu */
+.top-level-menu span {
+  font: bold 14px Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 25px 0 10px;
+  white-space: nowrap;
+
+  /* Make the link cover the entire list item-container */
+  display: block;
+  line-height: 30px;
+}
+.top-level-menu span:hover {
+  color: #000000;
+}
+
+.third-level-menu span {
+  -webkit-line-clamp: 1;
+  padding: 0 10px 0 10px;
+}
+
+.third-level-menu li {
+  overflow: hidden;
+}
+
+.add-button {
+  background: darkgray;
+  color: white;
+  padding: 12px 18px 12px 18px;
+  border-radius: 99px;
+}
+
+.add-button-wrapper {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.selection-caret {
+  background: tomato;
+  width: 3px;
+  height: 40px;
+  position: relative;
+  float: left;
+  transform: translateY(-5px);
+  margin: 0 6px 0 6px;
+  display: none;
+}
+
+.caret-chevron {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  float: left;
+  transform: translateY(-2px);
+  cursor: pointer;
+  background: url(/images/chevron_right_black_24dp.svg) no-repeat center center;
+  background-size: contain;
+  display: none;
+}
+
+.caret-chevron.left {
+  transform: translateY(-2px) scaleX(-1);
+}
+
+.cancel-button,
+.add-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  float: left;
+  margin: 0 0px 0 30px;
+  cursor: pointer;
+  background: url(/images/add_circle_black_24dp.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.cancel-button {
+  /* transform: rotate(45deg); */
+  margin: 0 0px 0 0;
+  background: url(/images/highlight_off_black_24dp.svg) no-repeat center center;
+  background-size: contain;
+  display: none;
+}
+
+.cancel-button:hover {
+  background: url(/images/highlight_off_red_24dp.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.add-icon:hover {
+  background: url(/images/add_circle_red_24dp.svg) no-repeat center center;
+  background-size: contain;
+}
+
+.caret-chevron:hover {
+  background: url(/images/chevron_right_red_24dp.svg) no-repeat center center;
+  background-size: contain;
+}
+
+/* background: url(/images/add_circle_red_24dp.svg) no-repeat center center;
+  background-size: contain;
+} */
